@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport">
+    <title>ONE - Juego de Palabras  - Pedro Arruvito</title>
+
+    <!--Llamado a CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Llamado a Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+ 
+    <!--Llamado a FontAwesome-->
+    <script src="https://kit.fontawesome.com/8218cadc15.js" crossorigin="anonymous"></script>
+
+    <!--Llamado a Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+    <header>
+        <p> <strong><h1>PROGRAMA ONE</h1> </strong> </p>                 
+        <div id="logo"> <img src="img/alura3.png" width=400 height=160 alt="logo Alura"> </div>
+        <p> <strong><h1><i class="fas fa-dice-d20"></i> &nbsp; Ahorcado  &nbsp; <i class="fas fa-dice-d20"></i> </h1></strong> </p>     
+    </header>
+
+    <main>    
+      <br>
+                      
+          <div>
+            <h2>¡Adivina la palabra!!!</h2>
+            <p> <h5>Instrucción Unica: Divertirse!!</h5></p>
+          </div>
+        
+          <div style="text-align:center;">
+            <canvas id="ahorcado" width="800px" height="600px" style="border:lightblue 1px solid;"></canvas>
+            <br>
+            <button class="btn" id="iniciar-juego">INICIAR JUEGO</button>
+          </div>
+          <br>
+
+          <div>
+            <input class="text-input" type="text" id="input-nueva-palabra" placeholder="NUEVA PALABRA EN MAYUSCULAS">
+            <button class="btn" id="nueva-palabra">AGREGAR PALABRA</button> 
+          </div>
+
+          <br>
+          <br>         
+    </main>
+   
+    <footer>  
+
+        <h4>
+            <div class="links"> <strong> 
+              <br>
+              <a href="https://discord.com/" target="_blank">Discord</a> &nbsp;
+              <a href="https://github.com/" target="_blank"> GitHub</a> &nbsp;
+              <a href="https://www.linkedin.com/" target="_blank">  LinkedIn</a> &nbsp;
+              <a href="https://app.aluracursos.com" target="_blank"> Alura</a> &nbsp;     
+            </strong>      
+            </div> 
+        </h4>
+        
+        <h4>
+          <div class="footer-copyright text-center py-3" > </div>
+          <div> © 2022 - Pedro Arruvito </div>  
+        </h4>  
+       
+    </footer>
+   
+    <!--Llamado a JS-->
+    
+    <script type="text/javascript" src="ahorcado.js"></script>
+    <script type="text/javascript" src="canvas.js"></script>
+
+</body>
+</html>
+
